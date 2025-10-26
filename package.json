@@ -1,0 +1,12 @@
+{
+  "name": "zintik-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "start": "concurrently \"npm --prefix backend start\" \"npm --prefix frontend preview\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
